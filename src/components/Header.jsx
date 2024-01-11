@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import styles from '../styles/Header.module.css';
 import classNames from 'classnames';
@@ -9,7 +9,10 @@ const isActiveLink = ({ isActive }) =>
 function Header() {
 	return (
 		<header className={styles.container}>
-			<h1 className={styles.title}>Jobarouter</h1>
+			<Link to="/" className={styles.title}>
+				Jobarouter
+			</Link>
+
 			<nav className={styles.navigation}>
 				<NavLink to="/" className={isActiveLink}>
 					Home
@@ -19,6 +22,9 @@ function Header() {
 				</NavLink>
 				<NavLink to="/help" className={isActiveLink}>
 					Help
+				</NavLink>
+				<NavLink to="/careers" className={isActiveLink}>
+					Careers
 				</NavLink>
 			</nav>
 		</header>
