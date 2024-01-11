@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 20px auto;
+}
+
+.breadcrumb::after {
+	content: '>';
+	margin-left: 10px;
+}
+
+.breadcrumb:last-child::after {
+	display: none;
+}
+
+.link {
+	color: #ddd;
+}

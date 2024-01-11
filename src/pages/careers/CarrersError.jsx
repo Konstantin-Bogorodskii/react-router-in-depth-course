@@ -2,7 +2,6 @@ import { Link, useRouteError } from 'react-router-dom';
 
 function CarrersError() {
 	const error = useRouteError();
-	console.log('error ==>', error);
 
 	return (
 		<div>

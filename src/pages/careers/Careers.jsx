@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { Link, useLoaderData } from 'react-router-dom';
 
 import styles from '../../styles/Careers.module.css';
@@ -22,11 +21,9 @@ function Careers() {
 export default Careers;
 
 export const careersLoader = async () => {
-	return axios
-		.get('db.json')
-		.then(response => {
-			const career = response.data.careers;
-			return career;
+	return import('../../data/db.json')
+		.then(data => {
+			return data.careers;
 		})
 		.catch(() => {
 			throw new Error('Could not fetch the careers');
