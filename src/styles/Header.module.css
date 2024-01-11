@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 30px;
+}
+
+.title {
+	margin-right: auto;
+	border-bottom: 3px solid var(--primary);
+}
+
+.navigation {
+	display: flex;
+	gap: 20px;
+}
+
+.link {
+	text-decoration: none;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+.link.active {
+	background: var(--primary);
+}

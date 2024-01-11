@@ -1,0 +1,23 @@
+.form {
+	margin-top: 30px;
+}
+
+.label,
+.input,
+.textarea {
+	display: block;
+}
+
+.input,
+.textarea {
+	margin-bottom: 30px;
+	padding: 8px;
+	border-radius: 4px;
+	border: 0;
+	width: 300px;
+	color: var(--secondary);
+}
+
+.label {
+	margin-bottom: 10px;
+}
